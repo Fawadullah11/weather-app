@@ -62,4 +62,3 @@ This weather forecast website provides users with **real-time weather updates** 
 
 This website is a simple yet **visually appealing** weather app with **dynamic content updates** and **real-time API integration**! 🚀  
 
-Let me know if you need any more details! 😊
