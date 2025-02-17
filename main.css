@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+img {
+    /* overflow-clip-margin: content-box; */
+    overflow: clip;
+    /* width: 1000px; */
+}
+
+body {
+    align-items: center;
+    display: flex;
+    font-family: "poppins", sans-serif; 
+    flex-direction: column;
+    justify-content: center; /* Added to center content vertically */
+    min-height: 100vh;
+    padding-top: 3%;
+    transition: 0.3s linear;
+    overflow: hidden;
+    /* height: 84vh; */
+    /* position: relative; */
+    /* top: 7vh; */
+    /* bottom: 20px; */
+    /* background-color: #555; */
+}
+body#image-style {
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#search {
+    width: 100vh; /* Consider using a percentage or fixed width for better responsiveness */
+    margin: 10px;
+    height: 40px; /* Slightly increased height for better usability */
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: #555;
+    outline: none;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added subtle shadow for better visibility */
+}
+
+#search:focus {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
+}
+
+.search1:hover {
+    box-shadow: 0 4px 10px rgb(255, 255, 255); /* Corrected shadow syntax and added color */
+    cursor: text;
+}
+
+#search-btn {
+    border-radius: 50%; /* Changed to 50% for a perfect circle */
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: none; /* Added to remove default border */
+    cursor: pointer; /* Added for better UX */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) shadow;
+}
+
+#search-btn:hover {
+    background-color: #f0f0f0; /* Slight change on hover for feedback */
+}
+
+#search-icon {
+    width: 25px;
+    height: 25px; /* Ensure the icon is square */
+}
+.error{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    right: 300px;
+    display: none;
+
+}
+.error2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    right: 300px;
+    display: none;
+
+}
+
+#weather-icon{
+    width: 170px;
+    margin-top: 30px;
+    margin-left: 18px;
+
+}
+#condition{
+    font-weight: 1500px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+#temp{
+    display: flex;
+    justify-content:center;
+    font-size: 80px;
+    font-weight: 500;
+}
+#city{
+    margin-left: 10px;
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.col1{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col2{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col1 img{
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 0;
+
+}
+.col2 img{
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 0;
+
+}
+.humidity{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.humidity1{
+    position: relative;
+    top:15px;
+    right: 46px;
+    font-size: 10px;
+}
+.windspeed{
+    font-size: 28px;
+    margin-top: -6px;
+    margin-left: 10px
+}
+.windspeed1{
+    position: relative;
+    top:15px;
+    right: 100px;
+    font-size: 10px;
+}
+.container2 {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.weather-days {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -45px;
+    height: 18vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.forcast-day {
+    background-color: #fff transparent;
+    border: 1px solid #131212;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    width: 18%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forcast-date {
+    font-size: 18px;
+    color: #fdfbfb;
+    /* margin-right: 25px; */
+}
+
+.forcast-tmp {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.forcast-desc {
+    font-size: 16px;
+    color: #f3f1f1;
+}
+#condition{
+    color: #f0f0f0;
+
+}
+/* resonsive web */
+@media screen and (max-width:1300px) {
+    input#search{
+        width: 480px;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .forcast-day{
+        width: 20%;
+    }
+}
+@media screen and (max-width:1025px) {
+    body{
+        overflow: scroll;
+    }
+
+    
+}
+@media screen and (max-width:850px) {
+    body{
+        overflow: hidden;
+    }
+    
+    input#search{
+        width: 350px;
+}
+    .row{
+        flex-wrap: wrap;
+}
+    .forcast-day{
+        width: 32%;
+    }
+    .forcast-date{
+        font-size: 27px;
+    } 
+    .forcast-tmp{
+        font-size: 23px;
+    }
+    .forcast-desc{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:560px) {
+
+    .forcast-day{
+        width: 20%;
+    }
+    .forcast-date{
+        font-size: 12px;
+    } 
+    .forcast-tmp{
+        font-size: 15px;
+    }
+    .forcast-desc{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:480px) {
+    body{
+        overflow: hidden;
+    }
+    input#search{
+        width: 265px;
+}
+    .row{
+        flex-wrap: wrap;
+}
+    .forcast-day{
+        width: 33%;
+    }
+    .forcast-date{
+        font-size: 11px;
+    } 
+    .forcast-tmp{
+        font-size: 13px;
+    }
+    .forcast-desc{
+        font-size: 10px;
+    }
+    .windspeed1{
+        text-wrap: nowrap;
+    }
+    .detail{
+        margin-left: 60px;
+    }
+    #temp{
+        font-size: 23px;
+
+    }
+    #city{
+        font-size: 25px;
+        margin: 0 27px;
+    }
+    /* body#image-style{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+    } */
+    #weather-icon{
+        width: 100px;
+        margin-left: 28px;
+    }
+    #condition{
+        font-size: 15px;
+    }
+    #humidity-icon{
+        width: 20px;
+    }
+    .humidity{
+        font-size: 23px;
+    }
+    #wind-icon{
+        width: 20px;
+    }
+    .windspeed{
+        font-size:23px;
+    }
+}
+@media screen and(max-width:356px) {
+    input#search{
+        width: 265px;
+}
+    .row{
+        flex-wrap: wrap;
+}
+    .forcast-day{
+        width: 33%;
+    }
+    .forcast-date{
+        font-size: 15px;
+    } 
+    .forcast-tmp{
+        font-size: 23px;
+    }
+    .forcast-desc{
+        font-size: 18px;
+    }
+    .windspeed1{
+        text-wrap: nowrap;
+    }
+    .detail{
+        margin-left: 60px;
+    }
+    #temp{
+        font-size: 37px;
+
+    }
+    #city{
+        font-size: 30px;
+        margin: 0 27px;
+    }
+    
+}
