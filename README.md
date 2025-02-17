@@ -8,6 +8,9 @@ weather app using Html Css and Javascript
 
 This weather forecast website provides users with **real-time weather updates** and **5-day forecasts** based on the city they enter. It also dynamically changes the **background image** using Unsplash API, making it visually appealing.  
 
+
+![Screenshot 2025-02-17 113517](https://github.com/user-attachments/assets/51d5a2d0-ed69-4cf6-b751-02d3eeda1b89)
+
 ---
 
 ## **🔹 Key Features**  
